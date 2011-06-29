@@ -1,5 +1,4 @@
-1. Download.
-2. From the top directory, run `irb -r ./lib/app.rb`
+To use: From the top directory, run `irb -r ./lib/app.rb`
 
 The following commands are available:
 
