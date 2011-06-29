@@ -1,0 +1,19 @@
+1. Download.
+2. From the top directory, run `irb -r ./lib/app.rb`
+
+The following commands are available:
+
+box
+  Prints out the state of the puzzlebox
+  
+move <x>, <y>, <z>
+  Occupies the space (x,y,z)
+  
+undo
+  Undoes your last move
+  
+restart
+  Undoes all moves for this puzzlebox and restarts the puzzle in the initial state.
+  
+create <x>, <y>, <z>, <side>
+  Creates a puzzle with a goal at (x,y,z) on a box with dimensions <side> x <side> x <side>
