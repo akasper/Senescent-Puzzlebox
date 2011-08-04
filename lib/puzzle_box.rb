@@ -27,7 +27,7 @@ class PuzzleBox
   
   #all points surrounding the goal point are threatened
   def partially_solved?
-    !points[goal[0]][goal[1]][goal[2]] && goal_adjacencies.all? { |adjacency| points[adjacency[0]][adjacency[1]][adjacency[2]] } 
+    !points[goal[0]][goal[1]][goal[2]] && goal_adjacencies.all? { |adjacency| points[adjacency[0]][adjacency[1]][adjacency[2]] || adjacency == goal }
   end
   
   # def mostly_solved?
